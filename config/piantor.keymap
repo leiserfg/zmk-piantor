@@ -1,11 +1,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define MEH LC(LS(LALT))
-#define U_CUT LS(DEL)
-#define U_COPY LC(INS)
-#define U_PASTE LS(INS)
-#define _0_ &to 0
+// MEH LC(LS(LALT))
+// U_CUT LS(DEL)
+// U_COPY LC(INS)
+// U_PASTE LS(INS)
 
 / {
     keymap {
@@ -30,7 +29,7 @@
             bindings = <
  &trans     &kp LG(Q)    &kp LC(W)   &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)                          &kp LBKT    &kp RBKT     &kp LBRC   &kp RBRC   &kp PRCNT    &trans
  &trans     &kp LGUI     &kp LALT    &kp LCTRL         &kp LSHFT     &trans                                &kp HASH    &kp EQUAL    &kp LPAR   &kp RPAR   &kp GRAVE    &trans
- &trans     &kp K_UNDO   &kp U_CUT   &kp U_COPY        &kp U_PASTE   &trans                                &kp CARET   &kp DOLLAR   &kp LT     &kp GT     &kp TILDE    &trans
+ &trans     &kp K_UNDO   &kp LS(DEL)   &kp LC(INS)        &kp LS(INS)   &trans                                &kp CARET   &kp DOLLAR   &kp LT     &kp GT     &kp TILDE    &trans
                                              &kp K_CMENU   &trans         &trans   &kp UNDERSCORE   &kp MINUS   &kp PLUS
             >;
         };
@@ -64,10 +63,10 @@
 
         Mouse {
             bindings = <
-  &trans _0_        _0_        _0_         _0_         _0_                     _MS_L       _MS_D       _MS_U       _MS_R   _0_   &trans
-  &trans &kp RGUI   &kp LALT   &kp LCTRL   &kp LSHFT   _0_                     _MM_L       _MM_D       _MM_U       _MM_R   _0_   &trans
-  &trans _0_        _0_        _0_         _0_         _0_                     _0_         &kp PG_DN   &kp PG_UP   _0_     _0_   &trans
-                                    _0_         _0_   _0_   &mkp LCLK   &mkp RCLK   &mkp MCLK
+  &trans &to 0        &to 0        &to 0         &to 0         &to 0                     _MS_L       _MS_D       _MS_U       _MS_R   &to 0   &trans
+  &trans &kp RGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &to 0                     _MM_L       _MM_D       _MM_U       _MM_R   &to 0   &trans
+  &trans &to 0        &to 0        &to 0         &to 0         &to 0                     &to 0         &kp PG_DN   &kp PG_UP   &to 0     &to 0   &trans
+                                    &to 0         &to 0   &to 0   &mkp LCLK   &mkp RCLK   &mkp MCLK
             >;
         };
 
