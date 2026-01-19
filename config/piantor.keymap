@@ -1,4 +1,3 @@
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -23,46 +22,46 @@
 
         Lower {
             bindings = <
-&trans           &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans      &trans    &trans     &trans
-&trans  &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans      &trans    &trans  &trans
-&trans         &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACKET  &kp RBKT   &kp LEFT_BRACE        &kp RBRC               &kp PERCENT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp POUND         &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans     &trans                &trans                 &trans       &trans
+                        &trans  &trans  &trans    &trans            &trans     &trans
             >;
         };
 
         Raise {
             bindings = <
-&trans           &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans      &trans    &trans     &trans
-&trans  &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans      &trans    &trans  &trans
-&trans         &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         Fun {
             bindings = <
-&trans           &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans      &trans    &trans     &trans
-&trans  &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans      &trans    &trans  &trans
-&trans         &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         Adjust {
             bindings = <
-&trans           &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans      &trans    &trans     &trans
-&trans  &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans      &trans    &trans  &trans
-&trans         &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         Mouse {
             bindings = <
-&trans           &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans      &trans    &trans     &trans
-&trans  &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans      &trans    &trans  &trans
-&trans         &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
