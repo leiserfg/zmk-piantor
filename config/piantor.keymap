@@ -1,6 +1,13 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define MEH LC(LS(LALT))
+#define U_CUT LS(DEL)
+#define U_COPY LC(INS)
+#define U_PASTE LS(INS)
+#define ___ &trans
+#define _0_ &to 0
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -22,10 +29,10 @@
 
         Lower {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACKET  &kp RBKT   &kp LEFT_BRACE        &kp RBRC               &kp PERCENT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp POUND         &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans     &trans                &trans                 &trans       &trans
-                        &trans  &trans  &trans    &trans            &trans     &trans
+ &trans     &kp LG(Q)    &kp LC(W)   &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)                          &kp LBKT    &kp RBKT     &kp LBRC   &kp RBRC   &kp PRCNT    &trans
+ &trans     &kp LGUI     &kp LALT    &kp LCTRL         &kp LSHFT     ___                                &kp HASH    &kp EQUAL    &kp LPAR   &kp RPAR   &kp GRAVE    &trans
+ &trans     &kp K_UNDO   &kp U_CUT   &kp U_COPY        &kp U_PASTE   ___                                &kp CARET   &kp DOLLAR   &kp LT     &kp GT     &kp TILDE    &trans
+                                             &kp K_CMENU   ___         ___   &kp UNDERSCORE   &kp MINUS   &kp PLUS
             >;
         };
 
