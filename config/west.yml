@@ -10,5 +10,13 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: zmk-keyboard-piantor
+      url: https://github.com/dani0854/zmk-keyboard-piantor
+      revision: main
+      path: modules/zmk-keyboard-piantor
+    - name: zmk-component-rpi-pico
+      url: https://github.com/dani0854/zmk-component-rpi-pico
+      revision: main
+      path: modules/zmk-component-rpi-pico
   self:
     path: config
