@@ -5,7 +5,6 @@
 #define U_CUT LS(DEL)
 #define U_COPY LC(INS)
 #define U_PASTE LS(INS)
-#define ___ &trans
 #define _0_ &to 0
 
 / {
@@ -38,37 +37,37 @@
 
         Raise {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+ &trans &trans      &kp N7   &kp N8   &kp N9   &trans                           &kp AMPS   &kp FSLH    &kp PIPE    &kp BSLH    &trans       &trans
+ &trans &kp AT   &kp N4   &kp N5   &kp N6   &kp N0                        &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &kp RGUI  &trans
+ &trans &trans      &kp N1   &kp N2   &kp N3   &kp KP_MULTIPLY               &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &trans       &trans
+                             &trans      &trans               &trans   &trans   &trans        &trans
             >;
         };
 
         Fun {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+  &trans &kp F12   &kp F7   &kp F8   &kp F9   &kp PSCRN               &trans   &trans         &trans         &trans        &trans       &trans
+  &trans &kp F11   &kp F4   &kp F5   &kp F6   &trans                     &trans   &kp LSHFT   &kp LCTRL   &kp LALT   &kp RGUI  &trans
+  &trans &kp F10   &kp F1   &kp F2   &kp F3   &trans                     &trans   &trans         &trans         &trans        &trans       &trans
+                              &trans      &trans         &trans   &trans   &trans   &trans
             >;
         };
 
         Adjust {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+ &trans &sys_reset    &trans   &trans   &trans   &trans                    &ext_power EP_TOG   &kp C_BRI_DN   &kp C_BRI_UP   &trans   &sys_reset    &trans
+ &trans &trans           &trans   &trans   &trans   &trans                    &kp C_MUTE          &kp C_VOL_DN   &kp C_VOL_UP   &trans   &trans           &trans
+ &trans &bootloader   &trans   &trans   &trans   &trans                    &bt BT_CLR          &bt BT_PRV     &bt BT_NXT     &trans   &bootloader   &trans
+                            &trans   &trans   &trans   &kp C_PP   &kp C_PREV          &kp C_NEXT
             >;
         };
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+  &trans _0_        _0_        _0_         _0_         _0_                     _MS_L       _MS_D       _MS_U       _MS_R   _0_   &trans
+  &trans &kp RGUI   &kp LALT   &kp LCTRL   &kp LSHFT   _0_                     _MM_L       _MM_D       _MM_U       _MM_R   _0_   &trans
+  &trans _0_        _0_        _0_         _0_         _0_                     _0_         &kp PG_DN   &kp PG_UP   _0_     _0_   &trans
+                                    _0_         _0_   _0_   &mkp LCLK   &mkp RCLK   &mkp MCLK
             >;
         };
 
