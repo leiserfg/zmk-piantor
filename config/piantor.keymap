@@ -13,17 +13,12 @@
         compatible = "zmk,keymap";
 
         Base {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R   |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F   |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V   |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-            //                    | GUI | BSPC | SPC |   | SPC | ENT  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y      &kp U    &kp I      &kp O    &kp P     &kp BSPC
-&mt LCTRL ESCAPE  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H      &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N      &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                &kp LGUI  &kp BSPC  &kp SPACE    &kp SPACE  &kp RET  &kp RALT
+ &kp TAB          &kp B         &kp L         &hml MEH D     &kp C          &kp V                                              &kp J            &kp F          &hmr MEH O     &kp U         &kp COMMA      &kp BSPC  
+ &mt LCTRL ESCAPE &hml LGUI N   &hml LALT R   &hml LCTRL T   &hml LSHFT S   &kp G                                              &kp Y            &hmr LSHFT H   &hmr LCTRL A   &hmr LALT E   &hmr RGUI I    &kp SQT   
+ &kp LSHFT        &kp X         &kp Q         &kp M          &kp W          &kp Z                                              &kp K            &kp P          &sqt_morph     &semi_morph   &dot_morph     &kp RSHFT 
+                                             &tm LGUI TAB   &lt LOWER ESC   &lt ADJUST RET   &tm RSHFT SPACE   &lt RAISE BSPC   &lt FUN DEL
             >;
         };
 
