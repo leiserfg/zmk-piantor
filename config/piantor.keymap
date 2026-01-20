@@ -215,14 +215,14 @@
             >;
         };
 
-        /*         Mouse { */
-        /*             bindings = < */
-        /* &trans  &to 0     &to 0     &to 0      &to 0      &to 0    &mmv SCRL_LEFT  &mmv SCRL_DOWN  &mmv SCRL_UP  &mmv SCRL_RIGHT  &to 0  &trans */
-        /* &trans  &kp RGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &to 0    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &to 0  &trans */
-        /* &trans  &to 0     &to 0     &to 0      &to 0      &to 0    &to 0           &kp PG_DN       &kp PG_UP     &to 0            &to 0  &trans */
-        /*                             &to 0      &to 0      &to 0    &mkp LCLK       &mkp RCLK       &mkp MCLK */
-        /*             >; */
-        /*         }; */
+                Mouse {
+                    bindings = <
+        &trans  &to 0     &to 0     &to 0      &to 0      &to 0    &mmv SCRL_LEFT  &mmv SCRL_DOWN  &mmv SCRL_UP  &mmv SCRL_RIGHT  &to 0  &trans
+        &trans  &kp RGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &to 0    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &to 0  &trans
+        &trans  &to 0     &to 0     &to 0      &to 0      &to 0    &to 0           &kp PG_DN       &kp PG_UP     &to 0            &to 0  &trans
+                                    &to 0      &to 0      &to 0    &mkp LCLK       &mkp RCLK       &mkp MCLK
+                    >;
+                };
 
         Qwerty {
             bindings = <
