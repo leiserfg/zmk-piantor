@@ -49,23 +49,23 @@
             retro-tap;
         };
 
-        /* dot_qmark: dot_qmark { */
-        /*     compatible = "zmk,behavior-mod-morph"; */
-        /*     label = "DOT_QMARK"; */
-        /*     bindings = <&kp DOT>, <&kp QMARK>; */
-        /**/
-        /*     #binding-cells = <0>; */
-        /*     mods = <(MOD_LSFT|MOD_RSFT)>; */
-        /* }; */
-        /**/
-        /* comma_excl: comma_excl { */
-        /*     compatible = "zmk,behavior-mod-morph"; */
-        /*     label = "COMMA_EXCL"; */
-        /*     bindings = <&kp COMMA>, <&kp EXCL>; */
-        /**/
-        /*     #binding-cells = <0>; */
-        /*     mods = <(MOD_LSFT|MOD_RSFT)>; */
-        /* }; */
+        dot_qmark: dot_qmark {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_QMARK";
+            bindings = <&kp DOT>, <&kp QMARK>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        comma_excl: comma_excl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_EXCL";
+            bindings = <&kp COMMA>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -75,7 +75,7 @@
             // Gallium colstag
 
             bindings = <
-&kp TAB           &kp B        &kp L        &hml MEH D    &kp C          &kp V             &kp J            &kp Y           &kp O         &kp U          COMMA  &kp BSPC
+&kp TAB           &kp B        &kp L        &hml LALT D    &kp C          &kp V             &kp J            &kp Y           &kp O         &kp U          COMMA  &kp BSPC
 &mt LCTRL ESCAPE  &hml LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S   &kp G             &kp P            &hmr LSHFT H    &hmr LCTRL A  &hmr LALT E    &hmr RGUI I  &kp ENTER
 &kp LSHFT         &kp X        &kp Q        &kp M         &kp W          &kp Z             &kp K            &kp F           &kp SQT       &kp SEMICOLON  DOT   &kp RSHFT
                                             &tm LGUI TAB  &lt LOWER ESC  &lt ADJUST RET    &tm RSHFT SPACE  &lt RAISE BSPC  &lt FUN DEL
