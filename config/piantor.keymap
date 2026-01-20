@@ -71,16 +71,16 @@
     keymap {
         compatible = "zmk,keymap";
 
-/*         Base { */
-/*             // Gallium colstag */
-/**/
-/*             bindings = < */
-/* &kp TAB           &kp B        &kp L        &hml MEH D    &kp C          &kp V             &kp J            &kp Y           &kp O         &kp U          &comma_excl  &kp BSPC */
-/* &mt LCTRL ESCAPE  &hml LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S   &kp G             &kp P            &hmr LSHFT H    &hmr LCTRL A  &hmr LALT E    &hmr RGUI I  &kp ENTER */
-/* &kp LSHFT         &kp X        &kp Q        &kp M         &kp W          &kp Z             &kp K            &kp F           &kp SQT       &kp SEMICOLON  &dot_qmark   &kp RSHFT */
-/*                                             &tm LGUI TAB  &lt LOWER ESC  &lt ADJUST RET    &tm RSHFT SPACE  &lt RAISE BSPC  &lt FUN DEL */
-/*             >; */
-/*         }; */
+        Base {
+            // Gallium colstag
+
+            bindings = <
+&kp TAB           &kp B        &kp L        &hml MEH D    &kp C          &kp V             &kp J            &kp Y           &kp O         &kp U          COMMA  &kp BSPC
+&mt LCTRL ESCAPE  &hml LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S   &kp G             &kp P            &hmr LSHFT H    &hmr LCTRL A  &hmr LALT E    &hmr RGUI I  &kp ENTER
+&kp LSHFT         &kp X        &kp Q        &kp M         &kp W          &kp Z             &kp K            &kp F           &kp SQT       &kp SEMICOLON  DOT   &kp RSHFT
+                                            &tm LGUI TAB  &lt LOWER ESC  &lt ADJUST RET    &tm RSHFT SPACE  &lt RAISE BSPC  &lt FUN DEL
+            >;
+        };
 
         Lower {
             bindings = <
