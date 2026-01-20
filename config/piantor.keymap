@@ -1,5 +1,7 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // MEH LC(LS(LALT))
 // U_CUT LS(DEL)
@@ -27,46 +29,45 @@
 
         Lower {
             bindings = <
- &trans     &kp LG(Q)    &kp LC(W)   &kp LS(LC(TAB))   &kp LC(TAB)   &kp LC(T)                          &kp LBKT    &kp RBKT     &kp LBRC   &kp RBRC   &kp PRCNT    &trans
- &trans     &kp LGUI     &kp LALT    &kp LCTRL         &kp LSHFT     &trans                                &kp HASH    &kp EQUAL    &kp LPAR   &kp RPAR   &kp GRAVE    &trans
- &trans     &kp K_UNDO   &kp LS(DEL)   &kp LC(INS)        &kp LS(INS)   &trans                                &kp CARET   &kp DOLLAR   &kp LT     &kp GT     &kp TILDE    &trans
-                                             &kp K_CMENU   &trans         &trans   &kp UNDERSCORE   &kp MINUS   &kp PLUS
+&trans  &kp LG(Q)   &kp LC(W)    &kp LS(LC(TAB))  &kp LC(TAB)  &kp LC(T)    &kp LBKT        &kp RBKT    &kp LBRC  &kp RBRC  &kp PRCNT  &trans
+&trans  &kp LGUI    &kp LALT     &kp LCTRL        &kp LSHFT    &trans       &kp HASH        &kp EQUAL   &kp LPAR  &kp RPAR  &kp GRAVE  &trans
+&trans  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)      &kp LS(INS)  &trans       &kp CARET       &kp DOLLAR  &kp LT    &kp GT    &kp TILDE  &trans
+                                 &kp K_CMENU      &trans       &trans       &kp UNDERSCORE  &kp MINUS   &kp PLUS
             >;
         };
 
         Raise {
             bindings = <
- &trans &trans      &kp N7   &kp N8   &kp N9   &trans                           &kp AMPS   &kp FSLH    &kp PIPE    &kp BSLH    &trans       &trans
- &trans &kp AT   &kp N4   &kp N5   &kp N6   &kp N0                        &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &kp RGUI  &trans
- &trans &trans      &kp N1   &kp N2   &kp N3   &kp KP_MULTIPLY               &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &trans       &trans
-                             &trans      &trans               &trans   &trans   &trans        &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans             &kp AMPS  &kp FSLH   &kp PIPE   &kp BSLH   &trans    &trans
+&trans  &kp AT  &kp N4  &kp N5  &kp N6  &kp N0             &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RGUI  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans    &trans
+                        &trans  &trans  &trans             &trans    &trans     &trans
             >;
         };
 
         Fun {
             bindings = <
-  &trans &kp F12   &kp F7   &kp F8   &kp F9   &kp PSCRN               &trans   &trans         &trans         &trans        &trans       &trans
-  &trans &kp F11   &kp F4   &kp F5   &kp F6   &trans                     &trans   &kp LSHFT   &kp LCTRL   &kp LALT   &kp RGUI  &trans
-  &trans &kp F10   &kp F1   &kp F2   &kp F3   &trans                     &trans   &trans         &trans         &trans        &trans       &trans
-                              &trans      &trans         &trans   &trans   &trans   &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans       &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp RGUI  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans       &trans  &trans     &trans     &trans    &trans    &trans
+                         &trans  &trans  &trans       &trans  &trans     &trans
             >;
         };
 
         Adjust {
             bindings = <
- &trans &sys_reset    &trans   &trans   &trans   &trans                    &ext_power EP_TOG   &kp C_BRI_DN   &kp C_BRI_UP   &trans   &sys_reset    &trans
- &trans &trans           &trans   &trans   &trans   &trans                    &kp C_MUTE          &kp C_VOL_DN   &kp C_VOL_UP   &trans   &trans           &trans
- &trans &bootloader   &trans   &trans   &trans   &trans                    &bt BT_CLR          &bt BT_PRV     &bt BT_NXT     &trans   &bootloader   &trans
-                            &trans   &trans   &trans   &kp C_PP   &kp C_PREV          &kp C_NEXT
+&trans  &sys_reset   &trans  &trans  &trans  &trans    &ext_power EP_TOG  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &sys_reset   &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &kp C_MUTE         &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans       &trans
+&trans  &bootloader  &trans  &trans  &trans  &trans    &trans             &trans        &trans        &trans  &bootloader  &trans
+                             &trans  &trans  &trans    &kp C_PP           &kp C_PREV    &kp C_NEXT
             >;
         };
 
         Mouse {
             bindings = <
-  &trans &to 0        &to 0        &to 0         &to 0         &to 0                     _MS_L       _MS_D       _MS_U       _MS_R   &to 0   &trans
-  &trans &kp RGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &to 0                     _MM_L       _MM_D       _MM_U       _MM_R   &to 0   &trans
-  &trans &to 0        &to 0        &to 0         &to 0         &to 0                     &to 0         &kp PG_DN   &kp PG_UP   &to 0     &to 0   &trans
-                                    &to 0         &to 0   &to 0   &mkp LCLK   &mkp RCLK   &mkp MCLK
+&trans     &to 0                          &to 0  &to 0   &to 0   &to 0 _MS_L _MS_D _MS_U _MS_R    &to 0  &trans     &trans     &kp RGUI   &kp LALT  &kp LCTRL
+&kp LSHFT  &to 0 _MM_L _MM_D _MM_U _MM_R  &to 0  &trans  &trans  &to 0                            &to 0  &to 0      &to 0      &to 0      &to 0     &kp PG_DN
+&kp PG_UP  &to 0                          &to 0  &trans  &to 0   &to 0                            &to 0  &mkp LCLK  &mkp RCLK  &mkp MCLK
             >;
         };
 
