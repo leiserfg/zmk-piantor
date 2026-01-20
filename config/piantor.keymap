@@ -78,7 +78,7 @@
 &kp TAB           &kp B        &kp L        &hml LALT D    &kp C          &kp V             &kp J            &kp Y           &kp O         &kp U          COMMA  &kp BSPC
 &mt LCTRL ESCAPE  &hml LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S   &kp G             &kp P            &hmr LSHFT H    &hmr LCTRL A  &hmr LALT E    &hmr RGUI I  &kp ENTER
 &kp LSHFT         &kp X        &kp Q        &kp M         &kp W          &kp Z             &kp K            &kp F           &kp SQT       &kp SEMICOLON  DOT   &kp RSHFT
-                                            &tm LGUI TAB  &lt LOWER ESC  &lt ADJUST RET    &tm RSHFT SPACE  &lt RAISE BSPC  &lt FUN DEL
+                                            &tm LGUI TAB  &lt 1 ESC  &lt 4 RET    &tm RSHFT SPACE  &lt 2 BSPC  &lt 3 DEL
             >;
         };
 
