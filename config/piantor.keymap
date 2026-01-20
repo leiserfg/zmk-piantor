@@ -1,6 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
+/* #include <dt-bindings/zmk/pointing.h> */
 
 // MEH LC(LS(LALT))
 // U_CUT LS(DEL)
@@ -49,38 +49,38 @@
             retro-tap;
         };
 
-        dot_qmark: dot_qmark {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_QMARK";
-            bindings = <&kp DOT>, <&kp QMARK>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        comma_excl: comma_excl {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_EXCL";
-            bindings = <&kp COMMA>, <&kp EXCL>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+        /* dot_qmark: dot_qmark { */
+        /*     compatible = "zmk,behavior-mod-morph"; */
+        /*     label = "DOT_QMARK"; */
+        /*     bindings = <&kp DOT>, <&kp QMARK>; */
+        /**/
+        /*     #binding-cells = <0>; */
+        /*     mods = <(MOD_LSFT|MOD_RSFT)>; */
+        /* }; */
+        /**/
+        /* comma_excl: comma_excl { */
+        /*     compatible = "zmk,behavior-mod-morph"; */
+        /*     label = "COMMA_EXCL"; */
+        /*     bindings = <&kp COMMA>, <&kp EXCL>; */
+        /**/
+        /*     #binding-cells = <0>; */
+        /*     mods = <(MOD_LSFT|MOD_RSFT)>; */
+        /* }; */
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
-            // Gallium colstag
-
-            bindings = <
-&kp TAB           &kp B        &kp L        &hml MEH D    &kp C          &kp V             &kp J            &kp Y           &kp O         &kp U          &comma_excl  &kp BSPC
-&mt LCTRL ESCAPE  &hml LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S   &kp G             &kp P            &hmr LSHFT H    &hmr LCTRL A  &hmr LALT E    &hmr RGUI I  &kp ENTER
-&kp LSHFT         &kp X        &kp Q        &kp M         &kp W          &kp Z             &kp K            &kp F           &kp SQT       &kp SEMICOLON  &dot_qmark   &kp RSHFT
-                                            &tm LGUI TAB  &lt LOWER ESC  &lt ADJUST RET    &tm RSHFT SPACE  &lt RAISE BSPC  &lt FUN DEL
-            >;
-        };
+/*         Base { */
+/*             // Gallium colstag */
+/**/
+/*             bindings = < */
+/* &kp TAB           &kp B        &kp L        &hml MEH D    &kp C          &kp V             &kp J            &kp Y           &kp O         &kp U          &comma_excl  &kp BSPC */
+/* &mt LCTRL ESCAPE  &hml LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S   &kp G             &kp P            &hmr LSHFT H    &hmr LCTRL A  &hmr LALT E    &hmr RGUI I  &kp ENTER */
+/* &kp LSHFT         &kp X        &kp Q        &kp M         &kp W          &kp Z             &kp K            &kp F           &kp SQT       &kp SEMICOLON  &dot_qmark   &kp RSHFT */
+/*                                             &tm LGUI TAB  &lt LOWER ESC  &lt ADJUST RET    &tm RSHFT SPACE  &lt RAISE BSPC  &lt FUN DEL */
+/*             >; */
+/*         }; */
 
         Lower {
             bindings = <
@@ -118,14 +118,14 @@
             >;
         };
 
-        Mouse {
-            bindings = <
-&trans  &to 0     &to 0     &to 0      &to 0      &to 0    &mmv SCRL_LEFT  &mmv SCRL_DOWN  &mmv SCRL_UP  &mmv SCRL_RIGHT  &to 0  &trans
-&trans  &kp RGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &to 0    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &to 0  &trans
-&trans  &to 0     &to 0     &to 0      &to 0      &to 0    &to 0           &kp PG_DN       &kp PG_UP     &to 0            &to 0  &trans
-                            &to 0      &to 0      &to 0    &mkp LCLK       &mkp RCLK       &mkp MCLK
-            >;
-        };
+/*         Mouse { */
+/*             bindings = < */
+/* &trans  &to 0     &to 0     &to 0      &to 0      &to 0    &mmv SCRL_LEFT  &mmv SCRL_DOWN  &mmv SCRL_UP  &mmv SCRL_RIGHT  &to 0  &trans */
+/* &trans  &kp RGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &to 0    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &to 0  &trans */
+/* &trans  &to 0     &to 0     &to 0      &to 0      &to 0    &to 0           &kp PG_DN       &kp PG_UP     &to 0            &to 0  &trans */
+/*                             &to 0      &to 0      &to 0    &mkp LCLK       &mkp RCLK       &mkp MCLK */
+/*             >; */
+/*         }; */
 
         Qwerty {
             bindings = <
