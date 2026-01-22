@@ -335,3 +335,9 @@ combos:
 - p: [32, 33]
   k: '>'
   l: [Base]
+- p: [8, 3]
+  k: {t: Qwerty, h: toggle}
+  l: [Base]
+- p: [8, 3]
+  k: ''
+  l: [Qwerty]
