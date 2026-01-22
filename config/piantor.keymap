@@ -72,13 +72,6 @@
     combos {
         compatible = "zmk,combos";
 
-        /* combo_dot_spc { */
-        /*   timeout-ms = <50>; */
-        /*   key-positions = <7 8>;
-    /*   bindings = <&dot_spc>; */
-        /*   layers = <0>; */
-        /* }; */
-
         combo_caps_word {
             timeout-ms = <50>;
             key-positions = <19 16>;
