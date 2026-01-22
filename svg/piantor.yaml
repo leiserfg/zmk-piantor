@@ -13,7 +13,7 @@ layers:
   - U
   - {t: ',', s: '!'}
   - ⌫
-  - {t: ESCAPE, h: ⌃}
+  - {t: ⎋, h: ⌃}
   - {t: N, h: ⌘}
   - {t: R, h: ⌥}
   - {t: T, h: ⌃}
@@ -24,7 +24,7 @@ layers:
   - {t: A, h: ⌃}
   - {t: E, h: ⌥}
   - {t: I, h: ⌘}
-  - ENTER
+  - ⏎
   - ⇧
   - X
   - Q
@@ -222,10 +222,10 @@ layers:
   - ''
   - ''
   - ''
-  - '&mmv SCRL_LEFT'
-  - '&mmv SCRL_DOWN'
-  - '&mmv SCRL_UP'
-  - '&mmv SCRL_RIGHT'
+  - 🖱️ ⇐
+  - 🖱️ ⇊
+  - 🖱️ ⇈
+  - 🖱️ ⇒
   - ''
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -271,7 +271,7 @@ layers:
   - O
   - P
   - ⌫
-  - {t: ESCAPE, h: ⌃}
+  - {t: ⎋, h: ⌃}
   - A
   - S
   - D
