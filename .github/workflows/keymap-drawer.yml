@@ -6,6 +6,7 @@ on:
     paths:
       - "config/*.keymap"
       - "svg/config.yml"
+      - "svg/*.svg"
 
 env:
   PATH: /root/.local/bin
