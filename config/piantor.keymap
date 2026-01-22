@@ -182,6 +182,7 @@
         dot_spc {
             bindings = <&dot_spc>;
             key-positions = <38 39>;
+            layers = <0>;
         };
     };
 
