@@ -165,18 +165,34 @@
             layers = <0>;
         };
 
-        to_querty {
+        combo_to_querty {
             bindings = <&to 6>;
             key-positions = <8 3>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        to_base {
+        combo_to_base {
             bindings = <&to 0>;
             key-positions = <8 3>;
             timeout-ms = <50>;
             layers = <6>;
+        };
+
+        dot_spc {
+            bindings = <&dot_spc>;
+            key-positions = <38 39>;
+        };
+    };
+
+    macros {
+        dot_spc: dot_spc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp SPACE &sk LEFT_SHIFT>;
+            label = "DOT_SPC";
+            tap-ms = <5>;
+            wait-ms = <0>;
         };
     };
 
