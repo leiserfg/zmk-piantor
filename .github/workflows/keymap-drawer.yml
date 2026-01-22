@@ -6,7 +6,6 @@ on:
     paths:
       - "config/*.keymap"
       - "svg/config.yml"
-      - "svg/*.svg"
 
 env:
   PATH: /root/.local/bin
@@ -22,4 +21,4 @@ jobs:
       output_folder: "svg" # path to save produced SVG and keymap YAML files
       parse_args: "" # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
-      # draw_args: "corne: '-k chocofi -l LAYOUT'"
+      draw_args: "corne: '-k chocofi -l LAYOUT'"
