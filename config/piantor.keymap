@@ -171,6 +171,20 @@
             bindings = <&kp GT>;
             layers = <0>;
         };
+
+        to_querty {
+            bindings = <&to 6>;
+            key-positions = <8 3>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        to_base {
+            bindings = <&to 0>;
+            key-positions = <8 3>;
+            timeout-ms = <50>;
+            layers = <6>;
+        };
     };
 
     keymap {
@@ -180,10 +194,10 @@
             // Gallium colstag
 
             bindings = <
-&kp TAB           &kp B        &kp L        &hml LALT D   &kp C         &kp V        &kp J            &kp Y         &kp O         &kp U          &comma_excl  &kp BSPC
+&kp TAB        &kp B        &kp L        &hml LALT D   &kp C         &kp V        &kp J            &kp Y         &kp O         &kp U          &comma_excl  &kp BSPC
 &mt LCTRL ESC  &hml LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S  &kp G        &kp P            &hmr LSHFT H  &hmr LCTRL A  &hmr LALT E    &hmr RGUI I  &kp RET
-&kp LSHFT         &kp X        &kp Q        &kp M         &kp W         &kp Z        &kp K            &kp F         &kp SQT       &kp SEMICOLON  &dot_qmark   &kp RSHFT
-                                            &tm LGUI TAB  &lt 1 ESC     &lt 4 RET    &tm RSHFT SPACE  &lt 2 BSPC    &lt 3 DEL
+&kp LSHFT      &kp X        &kp Q        &kp M         &kp W         &kp Z        &kp K            &kp F         &kp SQT       &kp SEMICOLON  &dot_qmark   &kp RSHFT
+                                         &tm LGUI TAB  &lt 1 ESC     &lt 4 RET    &tm RSHFT SPACE  &lt 2 BSPC    &lt 3 DEL
             >;
         };
 
@@ -234,10 +248,10 @@
 
         Qwerty {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y      &kp U    &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB        &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y      &kp U    &kp I      &kp O    &kp P     &kp BSPC
 &mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H      &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N      &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                &kp LGUI  &kp BSPC  &kp SPACE    &kp SPACE  &kp RET  &kp RALT
+&kp LSHFT      &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N      &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                             &kp LGUI  &kp BSPC  &kp SPACE    &kp SPACE  &kp RET  &kp RALT
             >;
         };
     };
