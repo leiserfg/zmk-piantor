@@ -1,0 +1,306 @@
+layout: {zmk_keyboard: corne}
+layers:
+  Base:
+  - - TAB
+    - B
+    - L
+    - {t: D, h: LALT}
+    - C
+    - V
+    - J
+    - Y
+    - O
+    - U
+  - - {t: ',', s: '!'}
+    - BSPC
+    - {t: ESCAPE, h: LCTRL}
+    - {t: N, h: LGUI}
+    - {t: R, h: LALT}
+    - {t: T, h: LCTRL}
+    - {t: S, h: LSHFT}
+    - G
+    - P
+    - {t: H, h: LSHFT}
+  - - {t: A, h: LCTRL}
+    - {t: E, h: LALT}
+    - {t: I, h: RGUI}
+    - ENTER
+    - LSHFT
+    - X
+    - Q
+    - M
+    - W
+    - Z
+  - - K
+    - F
+    - ''''
+    - ;
+    - {t: ., s: '?'}
+    - RSHFT
+    - {t: TAB, h: LGUI}
+    - {t: ESC, h: Lower}
+    - {t: RET, h: Adjust}
+    - {t: SPACE, h: RSHFT}
+  - - {t: BSPC, h: Raise}
+    - {t: DEL, h: Fun}
+  Lower:
+  - - {t: ▽, type: trans}
+    - Gui+Q
+    - Ctl+W
+    - Sft+Ctl+TAB
+    - Ctl+TAB
+    - Ctl+T
+    - '['
+    - ']'
+    - '{'
+    - '}'
+  - - '%'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - LGUI
+    - LALT
+    - LCTRL
+    - LSHFT
+    - {t: ▽, type: trans}
+    - '#'
+    - '='
+  - - (
+    - )
+    - '`'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - UNDO
+    - Sft+DEL
+    - Ctl+INS
+    - Sft+INS
+    - {t: ▽, type: trans}
+  - - ^
+    - $
+    - <
+    - '>'
+    - '~'
+    - {t: ▽, type: trans}
+    - CMENU
+    - {type: held}
+    - {t: ▽, type: trans}
+    - _
+  - ['-', +]
+  Raise:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '7'
+    - '8'
+    - '9'
+    - {t: ▽, type: trans}
+    - '&'
+    - /
+    - '|'
+    - \
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '@'
+    - '4'
+    - '5'
+    - '6'
+    - '0'
+    - LEFT
+    - DOWN
+  - - UP
+    - RIGHT
+    - RGUI
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '1'
+    - '2'
+    - '3'
+    - KP MULTIPLY
+  - - HOME
+    - PG DN
+    - PG UP
+    - END
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - {t: ▽, type: trans}
+  Fun:
+  - - {t: ▽, type: trans}
+    - F12
+    - F7
+    - F8
+    - F9
+    - PSCRN
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F11
+    - F4
+    - F5
+    - F6
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - LSHFT
+  - - LCTRL
+    - LALT
+    - RGUI
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F10
+    - F1
+    - F2
+    - F3
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {type: held}
+  Adjust:
+  - - {t: ▽, type: trans}
+    - '&sys_reset'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BRI DN
+    - BRI UP
+    - {t: ▽, type: trans}
+  - - '&sys_reset'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - MUTE
+    - VOL DN
+  - - VOL UP
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&bootloader'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&bootloader'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - PP
+  - [PREV, NEXT]
+  Mouse:
+  - - {t: ▽, type: trans}
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+    - '&mmv SCRL_LEFT'
+    - '&mmv SCRL_DOWN'
+    - '&mmv SCRL_UP'
+    - '&mmv SCRL_RIGHT'
+  - - {t: Base, h: toggle}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - RGUI
+    - LALT
+    - LCTRL
+    - LSHFT
+    - {t: Base, h: toggle}
+    - '&mmv MOVE_LEFT'
+    - '&mmv MOVE_DOWN'
+  - - '&mmv MOVE_UP'
+    - '&mmv MOVE_RIGHT'
+    - {t: Base, h: toggle}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+  - - {t: Base, h: toggle}
+    - PG DN
+    - PG UP
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+    - {t: ▽, type: trans}
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+    - {t: Base, h: toggle}
+    - '&mkp LCLK'
+  - ['&mkp RCLK', '&mkp MCLK']
+  Qwerty:
+  - [TAB, Q, W, E, R, T, Y, U, I, O]
+  - - P
+    - BSPC
+    - {t: ESCAPE, h: LCTRL}
+    - A
+    - S
+    - D
+    - F
+    - G
+    - H
+    - J
+  - [K, L, ;, '''', LSHFT, Z, X, C, V, B]
+  - [N, M, ',', ., /, RSHFT, LGUI, BSPC, SPACE, SPACE]
+  - [RET, RALT]
+combos:
+- p: [19, 16]
+  k: '&caps_word'
+  l: [Base]
+- p: [40, 41]
+  k: {t: Mouse, h: toggle}
+  l: [Base]
+- p: [18, 19]
+  k: '='
+  l: [Base]
+- p: [7, 19]
+  k: '['
+  l: [Base]
+- p: [9, 21]
+  k: ']'
+  l: [Base]
+- p: [8, 7]
+  k: '{'
+  l: [Base]
+- p: [8, 9]
+  k: '}'
+  l: [Base]
+- p: [19, 20]
+  k: (
+  l: [Base]
+- p: [20, 21]
+  k: )
+  l: [Base]
+- p: [31, 32]
+  k: <
+  l: [Base]
+- p: [32, 33]
+  k: '>'
+  l: [Base]
