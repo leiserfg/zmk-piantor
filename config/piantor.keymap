@@ -181,7 +181,7 @@
 
             bindings = <
 &kp TAB           &kp B        &kp L        &hml LALT D   &kp C         &kp V        &kp J            &kp Y         &kp O         &kp U          &comma_excl  &kp BSPC
-&mt LCTRL ESCAPE  &hml LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S  &kp G        &kp P            &hmr LSHFT H  &hmr LCTRL A  &hmr LALT E    &hmr RGUI I  &kp ENTER
+&mt LCTRL ESC  &hml LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S  &kp G        &kp P            &hmr LSHFT H  &hmr LCTRL A  &hmr LALT E    &hmr RGUI I  &kp RET
 &kp LSHFT         &kp X        &kp Q        &kp M         &kp W         &kp Z        &kp K            &kp F         &kp SQT       &kp SEMICOLON  &dot_qmark   &kp RSHFT
                                             &tm LGUI TAB  &lt 1 ESC     &lt 4 RET    &tm RSHFT SPACE  &lt 2 BSPC    &lt 3 DEL
             >;
@@ -225,7 +225,7 @@
 
         Mouse {
             bindings = <
-&trans  &to 0     &to 0     &to 0      &to 0      &to 0    &mmv SCRL_LEFT  &mmv SCRL_DOWN  &mmv SCRL_UP  &mmv SCRL_RIGHT  &to 0  &trans
+&trans  &to 0     &to 0     &to 0      &to 0      &to 0    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &to 0  &trans
 &trans  &kp RGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &to 0    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &to 0  &trans
 &trans  &to 0     &to 0     &to 0      &to 0      &to 0    &to 0           &kp PG_DN       &kp PG_UP     &to 0            &to 0  &trans
                             &to 0      &to 0      &to 0    &mkp LCLK       &mkp RCLK       &mkp MCLK
@@ -235,7 +235,7 @@
         Qwerty {
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y      &kp U    &kp I      &kp O    &kp P     &kp BSPC
-&mt LCTRL ESCAPE  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H      &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
+&mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H      &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N      &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                                 &kp LGUI  &kp BSPC  &kp SPACE    &kp SPACE  &kp RET  &kp RALT
             >;
