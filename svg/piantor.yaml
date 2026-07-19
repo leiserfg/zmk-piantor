@@ -1,40 +1,40 @@
 layout: {zmk_keyboard: piantor}
 layers:
-  Base:
+  Qwerty:
   - ⇥
-  - B
-  - L
-  - {t: D, h: ⌥}
-  - C
-  - V
-  - J
+  - Q
+  - W
+  - {t: E, h: ⌥}
+  - R
+  - T
   - Y
-  - O
   - U
-  - {t: ',', s: '!'}
+  - I
+  - O
+  - P
   - ⌫
   - {t: ⎋, h: ⌃}
-  - {t: N, h: ⌘}
-  - {t: R, h: ⌥}
-  - {t: T, h: ⌃}
-  - {t: S, h: ⇧}
+  - {t: A, h: ⌘}
+  - {t: S, h: ⌥}
+  - {t: D, h: ⌃}
+  - {t: F, h: ⇧}
   - G
-  - P
-  - {t: H, h: ⇧}
-  - {t: A, h: ⌃}
-  - {t: E, h: ⌥}
-  - {t: I, h: ⌘}
+  - H
+  - {t: J, h: ⇧}
+  - {t: K, h: ⌃}
+  - {t: L, h: ⌥}
+  - {t: ;, h: ⌘}
   - ⏎
   - ⇧
-  - X
-  - Q
-  - M
-  - W
   - Z
-  - K
-  - F
-  - ''''
-  - ;
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
   - {t: ., s: '?'}
   - ⇧
   - {t: ⇥, h: ⌘}
@@ -258,89 +258,40 @@ layers:
   - 🖱️L
   - 🖱️R
   - 🖱️M
-  Qwerty:
-  - ⇥
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - ⌫
-  - {t: ⎋, h: ⌃}
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - ⇧
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ⇧
-  - ⌘
-  - ⌫
-  - ⎵
-  - ⎵
-  - ⏎
-  - ⌥
 combos:
 - p: [19, 16]
   k: 🔠
-  l: [Base]
+  l: [Qwerty]
 - p: [40, 41]
   k: {t: Mouse, h: toggle}
-  l: [Base]
+  l: [Qwerty]
 - p: [18, 19]
   k: '='
-  l: [Base]
+  l: [Qwerty]
 - p: [7, 19]
   k: '['
-  l: [Base]
+  l: [Qwerty]
 - p: [9, 21]
   k: ']'
-  l: [Base]
+  l: [Qwerty]
 - p: [8, 7]
   k: '{'
-  l: [Base]
+  l: [Qwerty]
 - p: [8, 9]
   k: '}'
-  l: [Base]
+  l: [Qwerty]
 - p: [19, 20]
   k: (
-  l: [Base]
+  l: [Qwerty]
 - p: [20, 21]
   k: )
-  l: [Base]
+  l: [Qwerty]
 - p: [31, 32]
   k: <
-  l: [Base]
+  l: [Qwerty]
 - p: [32, 33]
   k: '>'
-  l: [Base]
-- p: [8, 3]
-  k: {t: Qwerty, h: toggle}
-  l: [Base]
-- p: [8, 3]
-  k: ''
   l: [Qwerty]
 - p: [38, 39]
   k: .⎵⇧
-  l: [Base]
+  l: [Qwerty]
