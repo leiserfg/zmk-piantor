@@ -204,7 +204,7 @@
             bindings = <
 &kp TAB        &kp Q        &kp W        &hml LALT E   &kp R         &kp T        &kp Y            &kp U         &kp I         &kp O          &kp P        &kp BSPC
 &mt LCTRL ESC  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H            &hmr LSHFT J  &hmr LCTRL K  &hmr LALT L    &hmr RGUI SEMI  &kp RET
-&kp LSHFT      &kp Z        &kp X        &kp C         &kp V         &kp B        &kp N            &kp M         &kp COMMA     &kp DOT        &dot_qmark   &kp RSHFT
+&kp LSHFT      &kp Z        &kp X        &kp C         &kp V         &kp B        &kp N            &kp M         &kp COMMA     &dot_qmark     &kp SQT &kp RSHFT
                                          &tm LGUI TAB  &lt 1 ESC     &lt 4 RET    &tm RSHFT SPACE  &lt 2 BSPC    &lt 3 DEL
             >;
         };
